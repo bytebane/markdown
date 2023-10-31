@@ -43,7 +43,7 @@ const SanitizedMD = () => {
 	}, [settings])
 
 	return (
-		<Card component={'section'} variant='plain' sx={(theme) => ({ height: '100%', width: '100%', overflow: 'scroll', boxShadow: theme.shadow.md, '--joy-shadowChannel': theme.vars.palette.primary.mainChannel, '--joy-shadowRing': 'inset 0 -3px 0 rgba(0 0 0 / 0.24)', '& *': { wordBreak: 'break-word' } })}>
+		<Card component={'section'} variant='plain' sx={(theme) => ({ height: '100%', width: '100%', overflowX: 'auto', boxShadow: theme.shadow.md, '--joy-shadowChannel': theme.vars.palette.primary.mainChannel, '--joy-shadowRing': 'inset 0 -3px 0 rgba(0 0 0 / 0.24)', '& *': { wordBreak: 'break-word' } })}>
 			{/* {!markdown && <h3 style={{ textAlign: 'center' }}>Enter Some Markdown </h3>} */}
 			<Markdown
 				remarkPlugins={remarkPlugins}

@@ -35,7 +35,6 @@ const RawInput = () => {
 				sx={(theme) => ({
 					width: '100%',
 					height: '100%',
-					overflow: 'scroll',
 					padding: '2rem 1rem',
 					boxShadow: theme.shadow.sm,
 					'--joy-shadowChannel': theme.vars.palette.primary.mainChannel,
