@@ -11,7 +11,7 @@ function App() {
 	const theme = themesList[themeColorId]
 
 	return (
-		<CssVarsProvider theme={theme}>
+		<CssVarsProvider defaultMode='dark' theme={theme} disableNestedContext>
 			<CssBaseline />
 
 			<AnimatedCursor innerSize={8} outerSize={35} innerScale={0.7} outerScale={1.5} innerStyle={{ zIndex: 99999, backgroundColor: theme.palette.primary.softBg }} outerStyle={{ zIndex: 99999, backgroundColor: 'transparent', border: `3px solid ${theme.palette.primary.softHoverBg}`, mixBlendMode: 'difference' }} clickables={['a', 'img', 'input[type="text"]', 'input[type="email"]', 'input[type="number"]', 'input[type="password"]', 'input[type="submit"]', 'input[type="image"]', 'label', 'select', 'textarea', 'button', '.link', '.custom']} />
